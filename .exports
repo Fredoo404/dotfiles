@@ -17,3 +17,6 @@ export LANG="en_US"
 
 # Define New link in PATH for python
 export PATH=/usr/local/bin:$PATH
+
+# Pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
