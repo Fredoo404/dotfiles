@@ -27,8 +27,11 @@ call vundle#begin()
 " Bundle Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'saltstack/salt-vim'
+Plugin 'sjl/badwolf'
 
 " All of Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
 
+" Set badwolf colorscheme
+colorscheme badwolf
