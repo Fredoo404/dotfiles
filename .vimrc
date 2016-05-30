@@ -18,3 +18,16 @@ if exists("&undodir")
     set undodir=~/.vim/undo
 endif
 
+" Required for Bundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Bundle Plugins
+Plugin 'VundleVim/Vundle.vim'
+
+" All of Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
+
