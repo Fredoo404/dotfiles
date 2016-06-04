@@ -30,6 +30,7 @@ Plugin 'saltstack/salt-vim'
 Plugin 'sjl/badwolf'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 
 " All of Plugins must be added before the following line
 call vundle#end()
