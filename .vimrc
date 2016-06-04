@@ -28,6 +28,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'saltstack/salt-vim'
 Plugin 'sjl/badwolf'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of Plugins must be added before the following line
 call vundle#end()
@@ -35,3 +37,8 @@ filetype plugin indent on
 
 " Set badwolf colorscheme
 colorscheme badwolf
+
+" Airline conf
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
