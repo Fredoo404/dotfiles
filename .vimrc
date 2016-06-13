@@ -31,6 +31,7 @@ Plugin 'sjl/badwolf'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of Plugins must be added before the following line
 call vundle#end()
