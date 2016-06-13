@@ -7,6 +7,9 @@ set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
 
+" Mouse support
+set mouse=a
+
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
