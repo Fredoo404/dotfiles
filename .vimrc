@@ -36,6 +36,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic' " Don't forget to install shellsheck fo shell verification.
 
 " All of Plugins must be added before the following line
 call vundle#end()
