@@ -52,3 +52,5 @@ let g:airline_powerline_fonts = 1
 
 " Mapping
 map <Leader>n :NERDTreeToggle<cr>
+nnoremap <Leader>p :set invpaste paste?<CR>
+set pastetoggle=<Leader>p
