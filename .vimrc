@@ -14,6 +14,18 @@ set mouse=a
 set binary
 set noeol
 
+"Replace tab with spaces
+set expandtab
+
+"Number of space characters that will be inserted when the tab key is pressed
+set tabstop=4
+
+"Change the number of space characters inserted for indentation
+set shiftwidth=4
+
+"Makes the spaces feel like real tabs
+set softtabstop=4
+
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
