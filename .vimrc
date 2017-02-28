@@ -49,10 +49,15 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic' " Don't forget to install shellsheck fo shell verification.
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 
 " All of Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
+
+" vim notes configuration
+let g:notes_directories = ['~/Dropbox/notes']
 
 " Set badwolf colorscheme
 colorscheme badwolf
