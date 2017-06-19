@@ -9,6 +9,7 @@
 # - .functions
 # - .vimrc
 # - .vim
+# - .screenrc
 
 execPath=$(cd $(dirname $0); pwd)
 workDir=$HOME
@@ -21,6 +22,7 @@ files[4]=".exports"
 files[5]=".functions"
 files[6]=".vimrc"
 files[7]=".vim"
+files[8]=".screenrc"
 
 
 usage() {
