@@ -23,6 +23,7 @@ files[5]=".functions"
 files[6]=".vimrc"
 files[7]=".vim"
 files[8]=".screenrc"
+files[9]=".mac"
 
 
 usage() {
