@@ -24,6 +24,7 @@ files[6]=".vimrc"
 files[7]=".vim"
 files[8]=".screenrc"
 files[9]=".mac"
+files[10]=".tmux.conf"
 
 
 usage() {
