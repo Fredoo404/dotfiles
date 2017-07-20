@@ -1,5 +1,5 @@
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
-for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+for file in ~/.{extra,bash_prompt,exports,aliases,functions,mac}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
