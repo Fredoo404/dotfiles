@@ -1,5 +1,20 @@
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
-for file in ~/.{extra,bash_prompt,exports,aliases,functions,mac}; do
+if [ "$(uname)" == "Darwin" ]; then
+  configFile[0]="$HOME/.extra"
+  configFile[1]="$HOME/.bash_prompt"
+  configFile[2]="$HOME/.exports"
+  configFile[3]="$HOME/.aliases"
+  configFile[4]="$HOME/.functions"
+  configFile[5]="$HOME/.mac"
+else
+  configFile[0]="$HOME/.extra"
+  configFile[1]="$HOME/.bash_prompt"
+  configFile[2]="$HOME/.exports"
+  configFile[3]="$HOME/.aliases"
+  configFile[4]="$HOME/.functions"
+fi
+
+for file in ${configFile[*]}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
