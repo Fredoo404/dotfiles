@@ -51,6 +51,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic' " Don't forget to install shellsheck fo shell verification.
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
+Plugin 'dominikduda/vim_current_word'
 
 " All of Plugins must be added before the following line
 call vundle#end()
