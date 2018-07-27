@@ -140,4 +140,17 @@ BWhite="\[\033[1;37m\]"       # White
 TIME="[\t]"
 DIRNAME="\w"
 
-export PS1="$BBlue$DIRNAME$BRed\$(__git_ps1)$BYellow\$$White "
+__last_status ()
+{
+  local last_status="$?"
+  local symbole="➜"
+
+  if [[ $last_status != 0 ]]; then
+    ret_status="$BRed$symbole"
+  else
+    ret_status="$BGreen$symbole"
+  fi
+  echo $ret_status
+}
+
+PROMPT_COMMAND='PS1="$(__last_status) $BBlue$DIRNAME$BRed\$(__git_ps1)$BYellow\$$White "'
