@@ -153,4 +153,4 @@ __last_status ()
   echo $ret_status
 }
 
-PROMPT_COMMAND='PS1="$(__last_status) $BBlue$DIRNAME$BRed\$(__git_ps1)$BYellow\$$White "'
+PROMPT_COMMAND='PS1="$(__last_status) $BBlue${VIRTUAL_ENV:+[`basename $VIRTUAL_ENV`]} $DIRNAME$BRed\$(__git_ps1)$BYellow\$$White "'
