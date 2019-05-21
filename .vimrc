@@ -72,3 +72,16 @@ let g:airline_powerline_fonts = 1
 map <Leader>n :NERDTreeToggle<cr>
 nnoremap <Leader>p :set invpaste paste?<CR>
 set pastetoggle=<Leader>p
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬\,space:␣
+
+" Tmux conf
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W'],
+      \'y'    : ['%R', '%a', '%Y'],
+      \'z'    : '#H'}
+
+" CtrlP config
+let g:ctrlp_cmd = 'CtrlPBuffer'
