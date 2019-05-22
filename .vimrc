@@ -52,6 +52,8 @@ Plugin 'scrooloose/syntastic' " Don't forget to install shellsheck fo shell veri
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'dominikduda/vim_current_word'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " All of Plugins must be added before the following line
 call vundle#end()
@@ -74,6 +76,12 @@ nnoremap <Leader>p :set invpaste paste?<CR>
 set pastetoggle=<Leader>p
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬\,space:␣
+nmap <leader>gt :GitGutterToggle<CR>
+nmap <leader>gst :GitGutterSignsToggle<CR>
+nmap <leader>ght :GitGutterLineHighlightsToggle<CR>
+nmap <leader>ghn :GitGutterNextHunk<CR>
+nmap <leader>ghp :GitGutterPrevHunk<CR>
+nmap <leader>gha <Plug>GitGutterStageHunk<CR>
 
 " Tmux conf
 let g:tmuxline_preset = {
@@ -85,3 +93,9 @@ let g:tmuxline_preset = {
 
 " CtrlP config
 let g:ctrlp_cmd = 'CtrlPBuffer'
+
+" GitGutter config
+highlight GitGutterAdd    guifg=#009900 guibg=1 ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 guibg=1 ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 guibg=1 ctermfg=1 ctermbg=0
+set updatetime=100
