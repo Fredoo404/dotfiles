@@ -99,3 +99,6 @@ highlight GitGutterAdd    guifg=#009900 guibg=1 ctermfg=2 ctermbg=0
 highlight GitGutterChange guifg=#bbbb00 guibg=1 ctermfg=3 ctermbg=0
 highlight GitGutterDelete guifg=#ff2222 guibg=1 ctermfg=1 ctermbg=0
 set updatetime=100
+
+" Enable autorad file when change occured from disk
+set autoread
