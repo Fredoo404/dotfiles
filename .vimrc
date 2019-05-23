@@ -102,3 +102,6 @@ set updatetime=100
 
 " Enable autorad file when change occured from disk
 set autoread
+
+" Command auto
+autocmd BufWritePost *.php execute '!vendor/bin/php-cs-fixer fix %'
