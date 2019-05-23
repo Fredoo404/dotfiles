@@ -28,3 +28,4 @@ alias gcm='git checkout master'
 alias gco='git commit'
 alias gst='git status'
 alias undogpush="git push -f origin HEAD^:master"
+alias php-fix="vendor/bin/php-cs-fixer fix"
