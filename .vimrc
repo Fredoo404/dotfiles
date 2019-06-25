@@ -1,6 +1,10 @@
 " Enable syntax color
 syntax on
 
+"Ignore the case during search
+set ignorecase
+set smartcase
+
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
 
