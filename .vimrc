@@ -79,7 +79,7 @@ map <Leader>n :NERDTreeToggle<cr>
 nnoremap <Leader>p :set invpaste paste?<CR>
 set pastetoggle=<Leader>p
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬\,space:␣
+set listchars=tab:▸\ ,eol:¬\,nbsp:␣,trail:•,space:·
 nmap <leader>gt :GitGutterToggle<CR>
 nmap <leader>gst :GitGutterSignsToggle<CR>
 nmap <leader>ght :GitGutterLineHighlightsToggle<CR>
