@@ -57,6 +57,7 @@ Plugin 'xolox/vim-notes'
 Plugin 'dominikduda/vim_current_word'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'majutsushi/tagbar'
 
 " All of Plugins must be added before the following line
 call vundle#end()
@@ -86,6 +87,7 @@ nmap <leader>ghn :GitGutterNextHunk<CR>
 nmap <leader>ghp :GitGutterPrevHunk<CR>
 nmap <leader>gha <Plug>GitGutterStageHunk<CR>
 nnoremap <leader>p li<space><esc>p
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 " Tmux conf
 let g:tmuxline_preset = {
