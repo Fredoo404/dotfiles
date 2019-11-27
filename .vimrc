@@ -85,6 +85,7 @@ nmap <leader>ght :GitGutterLineHighlightsToggle<CR>
 nmap <leader>ghn :GitGutterNextHunk<CR>
 nmap <leader>ghp :GitGutterPrevHunk<CR>
 nmap <leader>gha <Plug>GitGutterStageHunk<CR>
+nnoremap <leader>p li<space><esc>p
 
 " Tmux conf
 let g:tmuxline_preset = {
