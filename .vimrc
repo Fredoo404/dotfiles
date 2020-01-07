@@ -37,6 +37,15 @@ if exists("&undodir")
     set undodir=~/.vim/undo
 endif
 
+" Tags 
+set tags^=./tags,.git/tags;
+set tagrelative
+
+function CreateTags()
+    exec ':!ctags -R --tag-relative -f ' . '.git/tags app/'
+endfunction
+nmap <silent> <F4> :call CreateTags()<CR>
+
 " Required for Bundle
 set nocompatible
 filetype off
