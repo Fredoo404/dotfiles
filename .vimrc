@@ -41,10 +41,7 @@ endif
 set tags^=./tags,.git/tags;
 set tagrelative
 
-function CreateTags()
-    exec ':!ctags -R --tag-relative -f ' . '.git/tags app/'
-endfunction
-nmap <silent> <F4> :call CreateTags()<CR>
+nmap <silent> <F4> :!ctags -R --tag-relative -f .git/tags app/<CR>
 
 " Required for Bundle
 set nocompatible
