@@ -105,7 +105,6 @@ let g:tmuxline_preset = {
 
 " CtrlP config
 let g:ctrlp_cmd = 'CtrlPBuffer'
-let g:ctrlp_cmd = 'CtrlPTag'
 
 " GitGutter config
 highlight GitGutterAdd    guifg=#009900 guibg=1 ctermfg=2 ctermbg=0
