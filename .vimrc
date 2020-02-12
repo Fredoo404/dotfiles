@@ -94,6 +94,9 @@ nmap <leader>ghp :GitGutterPrevHunk<CR>
 nmap <leader>gha <Plug>GitGutterStageHunk<CR>
 nnoremap <leader>p li<space><esc>p
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
+map <leader>l :bn<CR>
+map <leader>k :bp<CR>
+map <leader>d :bd<CR>
 
 " Tmux conf
 let g:tmuxline_preset = {
